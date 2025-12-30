@@ -1,0 +1,231 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Trebuchet Ms", sans-serif;
+    background: linear-gradient(180deg, #FFEAF5, #F4DAFF, #ECD4FF);
+    color: #5A3A70;
+    overflow-x: hidden;
+    animation: fadeIn 1s ease;
+}
+
+
+nav {
+    background: rgba(255, 255, 255, 0.35);
+    backdrop-filter: blur(18px);
+    border-radius: 26px;
+    padding: 20px 40px;
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    box-shadow: 0 18px 45px rgba(160, 120, 240, 0.25);
+}
+
+nav a {
+    font-family: "DM Serif Display", serif;
+    text-decoration: none;
+    color: #6B4CB3;
+    font-weight: 600;
+    font-size: 1.1rem;
+    position: relative;
+    transition: 0.35s ease;
+	box-shadow: 0 12px 35px rgba(150, 100, 220, 0.2);
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #BFA6F2, #8F6AE1);
+    left: 0;
+    bottom: -6px;
+    border-radius: 5px;
+    transition: 0.35s ease;
+}
+
+nav a:hover::after {
+    width: 100%;
+	color: #9C7AE0;
+    text-shadow: 0 0 8px rgba(180,140,240,0.5);
+    transform: scale(1.05);
+}
+
+nav a:hover {
+    color: #8F6AE1;
+}
+
+body::before,
+body::after {
+    content: "🌸";
+    font-size: 28px;
+    position: fixed;
+    animation: flowerFall 9s linear infinite;
+    opacity: 0.8;
+}
+
+body::after {
+    left: 80%;
+    animation-duration: 12s;
+}
+
+@keyframes flowerFall {
+    0% { top: -10%; transform: rotate(0deg); }
+    100% { top: 110%; transform: rotate(360deg); }
+}
+
+.page-title {
+	font-family: "Great Vibes" ;
+    text-align: center;
+    font-size: 3rem;
+    color: #B464D6;
+    text-shadow: 0 5px 18px rgba(200,100,230,0.4);
+    margin-top: 40px;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #6F4A86;
+    margin-bottom: 40px;
+}
+
+.intro-box {
+    width: 75%;
+    margin: 20px auto;
+    padding: 25px;
+    background: rgba(255,255,255,0.4);
+    border-radius: 30px;
+    backdrop-filter: blur(10px);
+    border-left: 6px solid #E7A7FF;
+    border-right: 6px solid #D28BFF;
+    box-shadow: 0 12px 40px rgba(170,100,200,0.25);
+    text-align: center;
+    font-size: 1.1rem;
+    color: #59346F;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    color: #9E63CF;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    text-shadow: 0 3px 10px rgba(170,90,200,0.3);
+}
+
+.family-grid {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.family-card {
+	font-family: "Great Vibes" ;
+    width: 260px;
+    background: rgba(255,255,255,0.6);
+    border-radius: 35px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 12px 35px rgba(150,90,190,0.25);
+    border: 2px solid rgba(210,150,255,0.6);
+    transition: 0.35s ease;
+    position: relative;
+}
+
+.family-card:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 18px 45px rgba(150,60,200,0.33);
+    border-color: #D57BFF;
+}
+
+.family-card img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 25px;
+    margin-bottom: 10px;
+}
+
+.memory-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.memory-photo img {
+    width: 240px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 18px;
+    border: 4px solid #F5D0FF;
+    box-shadow: 0 15px 35px rgba(150,60,180,0.25);
+    transition: 0.3s ease;
+}
+
+.memory-photo img:hover {
+    transform: rotate(-2deg) scale(1.05);
+    box-shadow: 0 20px 45px rgba(150,60,180,0.35);
+}
+
+.quote-box {
+    width: 75%;
+    margin: 50px auto;
+    padding: 25px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-style: italic;
+    background: rgba(255,255,255,0.5);
+    border-radius: 25px;
+    border: 2px dashed #DDAAFF;
+    box-shadow: 0 12px 40px rgba(150,70,200,0.25);
+    position: relative;
+}
+
+.quote-box::after {
+    content: "✨";
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    font-size: 24px;
+    animation: sparkle 1.8s infinite;
+}
+
+@keyframes sparkle {
+    0% { opacity: 0.2; transform: scale(1); }
+    50% { opacity: 1; transform: scale(1.4); }
+    100% { opacity: 0.2; transform: scale(1); }
+}
+
+.back-btn {
+    display: block;
+    text-align: center;
+    margin: 40px auto;
+    width: fit-content;
+    padding: 12px 28px;
+    background: linear-gradient(120deg, #D9A7FF, #B57DFF);
+    color: white;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 600;
+    box-shadow: 0 10px 25px rgba(150,70,190,0.3);
+    transition: 0.3s ease;
+}
+
+.back-btn:hover {
+    transform: scale(1.07);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(25px); }
+    to { opacity: 1; transform: translateY(0); }
+}

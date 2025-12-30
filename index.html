@@ -1,0 +1,75 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="indexstyle.css">
+
+</head>
+<body>
+
+<header>
+
+    <nav>
+        <a href="biodata.html">My Biodata</a>
+        <a href="experience.html">My Experience</a>
+        <a href="education.html">My Education</a>
+        <a href="family.html">My Family</a>
+        <a href="gallery.html">My Gallery</a>
+        <a href="hometown.html">My Hometown</a>
+        <a href="hobbies.html">My Hobbies</a>
+        <a href="contact.html">Contact Me</a>
+    </nav>
+</header>
+
+<main class="hero-section">
+
+    <div class="text-section">
+	<link href='https://fonts.googleapis.com/css?family=Great Vibes' rel='stylesheet'>
+        <h1>Welcome to Chaa Website</h1>
+        <h3>Information Management Student</h3>
+
+        <p class="intro">
+            Greetings!<b> I’m Nur Amani Aisyah Binti Rohayazi </b> currently pursuing my Diploma in Information Management (Semester 5) at UiTM Kedah. 
+			This website showcases my background, experiences, and the journey I’m building. Feel free to browse through 💞
+        </p>
+
+        <a href="biodata.html" class="hero-btn">Discover About Me →</a>
+    </div>
+
+    <div class="image-section">
+        <img src="chaaphoto.jpeg" alt="Photo of Amani Aisyah">
+    </div>
+
+</main>
+
+<div class="quote-box">
+    “I carry a big dreams in my heart, not because I want to impress the world,  
+    but because I want to prove to myself that I can achieve everything I once thought impossible.”
+</div>
+
+<p>
+<audio id="bgm">
+	<source src="lagu.mp3" type="audio/mpeg">
+	Your browse does not support the audio element.
+</audio>
+	
+<button class="music-button" onclick="toggleMusic()">Play Music🎵
+</button>
+	  
+	  <script>
+  const music = document.getElementById("bgm");
+
+  function toggleMusic() {
+    if (music.paused) {
+      music.play();
+    } else {
+      music.pause();
+    }
+  }
+</script>
+<script src="script.js"></script>
+</body>
+</html>
+
+
+

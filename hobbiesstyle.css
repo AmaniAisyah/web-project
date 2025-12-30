@@ -1,0 +1,149 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(180deg, #FFE9F7, #F4D7FF, #F8E8FF);
+    font-family: "Trebuchet Ms", sans-serif;
+    color: #4C2D63;
+    animation: fadeIn 1s ease;
+}
+
+nav {
+    background: rgba(255, 255, 255, 0.35);
+    backdrop-filter: blur(18px);
+    border-radius: 26px;
+    padding: 20px 40px;
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    box-shadow: 0 18px 45px rgba(160, 120, 240, 0.25);
+}
+
+nav a {
+    font-family: "DM Serif Display", serif;
+    text-decoration: none;
+    color: #6B4CB3;
+    font-weight: 600;
+    font-size: 1.1rem;
+    position: relative;
+    transition: 0.35s ease;
+	box-shadow: 0 12px 35px rgba(150, 100, 220, 0.2);
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #BFA6F2, #8F6AE1);
+    left: 0;
+    bottom: -6px;
+    border-radius: 5px;
+    transition: 0.35s ease;
+}
+
+nav a:hover::after {
+    width: 100%;
+	color: #9C7AE0;
+    text-shadow: 0 0 8px rgba(180,140,240,0.5);
+    transform: scale(1.05);
+}
+
+nav a:hover {
+    color: #8F6AE1;
+}
+
+.header {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.header h1 {
+	font-family: "Great Vibes" ;
+    font-size: 3rem;
+    color: #AA54D1;
+    text-shadow: 0 3px 12px rgba(180,120,240,0.3);
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    opacity: 0.85;
+    color: #6A458A;
+}
+
+.hobbies-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    flex-wrap: wrap;
+}
+
+.hobby-card {
+    width: 240px;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 25px;
+    box-shadow: 0 12px 30px rgba(120,80,170,0.22);
+    border: 2px dashed #E7B9FF;
+    text-align: center;
+    transition: 0.3s ease;
+    position: relative;
+}
+
+.hobby-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 18px;
+    margin-bottom: 15px;
+}
+
+.hobby-card video {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 20px;
+    margin-bottom: 15px;
+}
+
+.hobby-card:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 18px 45px rgba(110,70,160,0.28);
+}
+
+.hobby-card h3 {
+    font-size: 1.3rem;
+    color: #8B4BB8;
+    margin-bottom: 8px;
+}
+
+.hobby-card p {
+    font-size: 0.95rem;
+    color: #5C3A76;
+}
+
+.back-btn {
+    display: block;
+    width: fit-content;
+    margin: 20px auto 40px auto;
+    padding: 12px 28px;
+    background: linear-gradient(120deg, #D7A1FF, #B47CFF);
+    color: white;
+    border-radius: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    box-shadow: 0 10px 25px rgba(120,70,180,0.3);
+    transition: 0.3s ease;
+}
+
+.back-btn:hover {
+    transform: scale(1.07);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
